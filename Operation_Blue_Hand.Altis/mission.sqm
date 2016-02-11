@@ -5,12 +5,14 @@ class Mission
 	{
 		"a3_map_altis",
 		"A3_Characters_F_BLUFOR",
-		"a3_characters_f"
+		"a3_characters_f",
+		"A3_Supplies_F_Heli_CargoNets"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
+		"A3_Supplies_F_Heli_CargoNets",
 		"a3_map_altis"
 	};
 	randomSeed=2285759;
@@ -35,7 +37,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=4;
+		items=6;
 		class Item0
 		{
 			side="WEST";
@@ -44,7 +46,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={12820.555,88.604851,16665.744};
+					position[]={12821.042,88.658562,16665.498};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -55,7 +57,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={12823.279,88.659111,16663.271};
+					position[]={12822.335,88.695274,16664.248};
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -66,7 +68,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={12819.532,88.218758,16662.848};
+					position[]={12819.716,88.406921,16664.158};
 					id=2;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -76,7 +78,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={12821.492,88.176086,16661.145};
+					position[]={12821.066,88.418663,16663.217};
 					id=3;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -234,10 +236,104 @@ class Mission
 				};
 			};
 		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12812.925,87.533607,16644.688};
+					id=16;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Sniper";
+				};
+				class Item1
+				{
+					position[]={12811.876,87.522781,16643.16};
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="Spotter";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={12815.517,87.515572,16642.865};
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="SF Team Leader";
+				};
+				class Item1
+				{
+					position[]={12814.073,87.511215,16641.662};
+					id=19;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="SF Operator";
+				};
+				class Item2
+				{
+					position[]={12815.826,87.508751,16641.629};
+					id=20;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="SF Operator";
+				};
+				class Item3
+				{
+					position[]={12814.624,87.506371,16640.633};
+					id=21;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="SF Operator";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={12822.079,88.080269,16652.553};
+			azimut=116.07784;
+			id=22;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="abox";
+			init="this addAction [""Open Virtual Arsenal"", {[""Open"",true] spawn BIS_fnc_arsenal}];";
+			description="SF Operator";
+		};
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={12877.075,84.657707,16739.402};
@@ -248,6 +344,12 @@ class Mission
 		{
 			position[]={12834.45,86.239868,16736.211};
 			name="helip_2";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={12815.659,88.125298,16668.451};
+			name="respawn_west";
 			type="Empty";
 		};
 	};
